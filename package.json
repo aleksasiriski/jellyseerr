@@ -21,7 +21,6 @@
     "typecheck": "pnpm typecheck:server && pnpm typecheck:client",
     "typecheck:server": "tsc --project server/tsconfig.json --noEmit",
     "typecheck:client": "tsc --noEmit",
-    "prepare": "husky install",
     "cypress:open": "cypress open",
     "cypress:prepare": "ts-node -r tsconfig-paths/register --files --project server/tsconfig.json server/scripts/prepareTestDb.ts",
     "cypress:build": "pnpm build && pnpm cypress:prepare"
@@ -69,6 +68,7 @@
     "node-schedule": "2.1.1",
     "nodemailer": "6.9.1",
     "openpgp": "5.7.0",
+    "pg": "8.11.0",
     "plex-api": "5.3.2",
     "pug": "3.0.2",
     "react": "^18.3.1",
@@ -151,7 +151,6 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "8.0.3",
     "lint-staged": "13.1.2",
     "nodemon": "2.0.20",
     "postcss": "8.4.21",
